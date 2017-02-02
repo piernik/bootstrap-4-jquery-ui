@@ -1,0 +1,26 @@
+.ui-autocomplete {
+  @extend .list-group;
+  max-width: 200px;
+  overflow-y: auto;
+  max-height: 400px;
+  .ui-menu-item {
+    @extend .list-group-item;
+    padding: 0;
+    display: block;
+  }
+  .ui-menu-item-wrapper {
+    padding: $list-group-item-padding-x/2 $list-group-item-padding-y/2;
+    width: 100%;
+    cursor: pointer;
+    &.ui-state-hover {
+      color: $list-group-link-hover-color;
+      text-decoration: none;
+      background-color: $list-group-hover-bg;
+    }
+    &.ui-state-active {
+      color: $list-group-link-active-color;
+      background-color: $list-group-link-active-bg;
+    }
+
+  }
+}
